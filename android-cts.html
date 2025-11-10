@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Compatibility Test Suite (CTS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3ddc84;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #777;
+            border-radius: 3px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #3ddc84;
+            border-bottom: 2px solid #3ddc84;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 25px;
+        }
+        .feature-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3ddc84;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .feature-box h4 {
+            margin-top: 0;
+            color: #333;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .external-link {
+            color: #3ddc84;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .external-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            color: #666;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Android Compatibility Test Suite (CTS)</h1>
+        <p>Ensuring Android Device Compatibility</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="android-cts.html">Android CTS</a>
+    </nav>
+    
+    <div class="content">
+        <section class="info-section">
+            <h2>Overview</h2>
+            <p>The <strong>Android Compatibility Test Suite (CTS)</strong> is a free, commercial-grade automated test suite provided by Google to help device manufacturers and developers ensure that their devices remain compatible with the official Android platform. Compatibility means that devices will reliably run the vast ecosystem of Android applications and adhere to Google's standards for API behavior, system features, and platform consistency.</p>
+            
+            <p>CTS is designed to be run on a desktop machine and automatically executes tests on attached Android devices or emulators. The tests are typically written in Java as JUnit tests and packaged as APKs, which are installed and executed directly on the device under test (DUT).</p>
+        </section>
+
+        <section class="info-section">
+            <h2>Key Features</h2>
+            
+            <div class="feature-box">
+                <h4>1. Automated Test Harness</h4>
+                <p>CTS provides a fully automated testing framework that runs on desktop machines and executes comprehensive tests on connected devices or emulators. Tests are written in Java as JUnit tests and packaged as APKs for device installation and execution.</p>
+            </div>
+
+            <div class="feature-box">
+                <h4>2. Comprehensive Coverage</h4>
+                <p>The test suite covers multiple testing areas:</p>
+                <ul>
+                    <li><strong>Signature Tests:</strong> Verify public API correctness</li>
+                    <li><strong>Unit Tests:</strong> Module-level validation</li>
+                    <li><strong>Functional Tests:</strong> Multiple APIs working together for specific use cases</li>
+                    <li><strong>Reference App Tests:</strong> Sample applications exercising runtime services</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>3. Integration with Daily Workflow</h4>
+                <p>CTS is designed for continuous integration environments and can be part of regular device development workflows. This allows developers to identify incompatibilities early and maintain compatibility throughout the entire product lifecycle.</p>
+            </div>
+
+            <div class="feature-box">
+                <h4>4. Trade Federation Framework</h4>
+                <p>CTS utilizes "Trade Federation," a robust test harness and framework that efficiently manages the execution, result collection, and reporting of thousands of automated tests. This framework ensures reliable test execution at scale.</p>
+            </div>
+
+            <div class="feature-box">
+                <h4>5. CTS Verifier</h4>
+                <p>For APIs or features that require manual interactions (such as camera, sensors, or audio functionalities), CTS includes CTS Verifier—a supplementary application that allows for manual testing and comprehensive results collection.</p>
+            </div>
+
+            <div class="feature-box">
+                <h4>6. Test Plans & Modules</h4>
+                <p>Test cases are organized into modules (grouped by feature area such as media, connectivity, sensors) and test plans (collections of modules for broad compatibility assessment). This modular approach enables both focused and full device testing depending on development needs.</p>
+            </div>
+
+            <div class="feature-box">
+                <h4>7. GMS Certification Requirement</h4>
+                <p>Passing CTS is <span class="highlight">essential for manufacturers</span> who wish to obtain Google Mobile Services (GMS) certification—necessary to distribute devices with popular Google apps like Play Store, Gmail, and YouTube.</p>
+            </div>
+
+            <div class="feature-box">
+                <h4>8. Open Source and Extensible</h4>
+                <p>The CTS is open source, allowing developers to contribute to its improvement and strengthen the ecosystem for all Android device makers. Google periodically releases new versions and updates to the test suite.</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Why is CTS Important?</h2>
+            
+            <h3>Device Reliability</h3>
+            <p>CTS ensures that core Android features and APIs behave consistently and as expected across all devices, regardless of manufacturer or hardware configuration.</p>
+
+            <h3>App Ecosystem Compatibility</h3>
+            <p>Devices that pass CTS can reliably run millions of applications from the Google Play Store, promoting a healthy and vibrant application ecosystem that benefits both developers and users.</p>
+
+            <h3>Market Access</h3>
+            <p>Passing CTS is mandatory for devices seeking access to Google Mobile Services. This certification often directly impacts sales potential in major markets, especially for consumer-focused products.</p>
+
+            <h3>User Experience</h3>
+            <p>By ensuring compatibility across devices, CTS helps maintain a consistent Android experience that users can depend on, regardless of which device they choose.</p>
+        </section>
+
+        <section class="info-section">
+            <h2>How CTS Works</h2>
+            
+            <ol>
+                <li><strong>Setup:</strong> Connect an Android device or start an emulator, then run CTS from a desktop machine</li>
+                <li><strong>Test Execution:</strong> CTS automatically installs test APKs and executes comprehensive test suites</li>
+                <li><strong>Result Collection:</strong> Test results are automatically collected and aggregated</li>
+                <li><strong>Report Generation:</strong> Detailed reports identify any compatibility issues or failures</li>
+                <li><strong>Issue Resolution:</strong> Developers address identified issues and re-run tests</li>
+                <li><strong>Certification:</strong> Once all tests pass, the device can proceed with GMS certification</li>
+            </ol>
+        </section>
+
+        <section class="info-section">
+            <h2>Summary</h2>
+            <p>CTS is central to maintaining Android's uniformity across highly diverse hardware. It supports both automated and manual testing, covers a broad spectrum of Android features, and underpins Google's compatibility program. Passing CTS helps manufacturers build devices that are secure, stable, consistent, and ready for the vast Android app ecosystem while enabling access to GMS services.</p>
+        </section>
+
+        <section class="info-section">
+            <h2>Learn More</h2>
+            <p>For more detailed information about Android CTS, visit the official documentation:</p>
+            <p><a href="https://source.android.com/docs/compatibility/cts" class="external-link" target="_blank" rel="noopener noreferrer">Android CTS Official Documentation →</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 My Personal Website | Information source: Android Open Source Project</p>
+    </footer>
+</body>
+</html>
